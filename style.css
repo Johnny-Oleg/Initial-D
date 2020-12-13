@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.car {
+    width: 50px;
+    height: 100px;
+    background: transparent url(./image/player.png) center / cover no-repeat;
+    position: absolute;
+}
+
+.rival {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+}
+
+.game {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-area {
+    width: 300px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background: #222;
+}
+
+.line {
+    width: 10px;
+    position: absolute;
+    left: calc(300px / 2 - 5px);
+    background: #fff;
+}
+
+.start {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background: black;
+    font-family: sans-serif;
+    z-index: 200;
+}
+
+.score {
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: skyblue;
+    background: black;
+    font-family: sans-serif;
+    z-index: 200;
+}
+
+.top-score {
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    position: fixed;
+    bottom: 300px;
+    left: 50px;
+    color: #000;
+}
+
+.btn {
+    padding: 10px 30px;
+    cursor: pointer;
+}
