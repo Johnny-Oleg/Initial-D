@@ -25,7 +25,10 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
+    background-image: url('image/bg.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 ol, ul {
@@ -125,7 +128,7 @@ table {
     position: fixed;
     bottom: 300px;
     left: 50px;
-    color: #000;
+    color: #fff;
 }
 
 .btn {
