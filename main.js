@@ -20,7 +20,6 @@ const audio_6 = 'audio/audio_6.mp3';
 
 const music = [audio_1, audio_2, audio_3, audio_4, audio_5, audio_6];
 const random = arr => arr[Math.floor(Math.random() * arr.length)];
-const randomTrack = random(music);
 
 $car.classList.add('car');
 $gameArea.style.height = countSection * HEIGHT;
@@ -113,7 +112,7 @@ const startGame = ({ target }) => {
 
     settings.score = 0;
     settings.start = true;
-    $audio.src = randomTrack;
+    $audio.src = random(music);
 
     $gameArea.append($car);
     document.body.append($audio);
